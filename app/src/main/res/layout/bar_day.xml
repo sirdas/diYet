@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginEnd="16dp"
+    android:animateLayoutChanges="true"
+    android:clickable="true"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/tv_day_kcal">
+    <!-- tools:showIn="@layout/fragment_today" -->
+    <View
+        android:id="@+id/v_bar_carb"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/carbGreen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/v_bar_protein"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/proteinRed"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/v_bar_carb"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/v_bar_fat"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/fatYellow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/v_bar_protein"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/v_bar_empty"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorPrimaryLight"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/v_bar_fat"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_bar_protein"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:maxLines="1"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/v_bar_protein"
+        app:layout_constraintEnd_toStartOf="@+id/v_bar_fat"
+        app:layout_constraintStart_toStartOf="@+id/v_bar_protein"
+        app:layout_constraintTop_toTopOf="@+id/v_bar_protein" />
+
+    <TextView
+        android:id="@+id/tv_bar_fat"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:maxLines="1"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/v_bar_fat"
+        app:layout_constraintEnd_toStartOf="@+id/v_bar_empty"
+        app:layout_constraintStart_toStartOf="@+id/v_bar_fat"
+        app:layout_constraintTop_toTopOf="@+id/v_bar_fat" />
+
+    <TextView
+        android:id="@+id/tv_bar_carb"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:maxLines="1"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/v_bar_carb"
+        app:layout_constraintEnd_toStartOf="@+id/v_bar_protein"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/v_bar_carb" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

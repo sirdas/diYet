@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">diYet</string>
+    <string name="today">Today</string>
+    <string name="food">Food</string>
+    <string name="recipes">Recipes</string>
+    <string name="calendar">Calendar</string>
+
+    <string name="non_scroll_bottom_sheet_behavior" translatable="false">me.sirdas.diyet.NonScrollBottomSheetBehavior</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search_food">Search food</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+</resources>
